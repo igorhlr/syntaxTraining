@@ -1,4 +1,4 @@
-![Alt text](angular-15-crud-example.png)
+![Site visual](angular-15-crud-example.png)
 
 ### 🚀 - Functionalities
 
@@ -8,15 +8,9 @@
 
 **3 -** There is a search box for finding Tutorials by title.
 
-**4 -** change status to **Published** using **Publish** button
-
-**5 -** delete the Tutorial using **Delete** button
-
-**6 -** update the Tutorial details with **Update** button
+**4 -** Change status to **Published** using **Publish** button
 
 ### 💡  - Start application
-
-Run Nodejs + MongoDB with Docker Compose
 
 The services can be run on the background with command:
 
@@ -38,13 +32,29 @@ docker image
 
 ### Angular Client
 
-```
+```powershell
 cd angular-15-client
-npm install
-
 ```
 
-Run `ng serve --port 8081`. Navigate to `http://localhost:8081/`.
+Install packages
+
+```powershell
+npm install
+```
+
+Run [localhost](http://localhost) 
+
+```powershell
+ng serve --port 8081
+```
+
+after run this commands you can open in browser `http://localhost:8081/`.
+
+| Container | Port |
+| --- | --- |
+| API | 8080 |
+| APP | 8081 |
+| MongoDB | 7017 |
 
 ## Stop the Application
 
@@ -56,8 +66,6 @@ Stopping all the running containers is also simple with a single command:
 docker-compose down
 ```
 
-## References
+## Step by step
 
 https://www.bezkoder.com/angular-15-node-js-express-mongodb/
-
-
